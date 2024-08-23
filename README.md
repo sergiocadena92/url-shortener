@@ -12,9 +12,9 @@ Simple API REST application to shortens a valid URL
 
 ### Steps to Build
 1. Build the project using Gradle:
-    ``bash
+    ```bash
     ./gradlew build
-    ``
+    ```
 
 ## Usage
 ### Running the Application
