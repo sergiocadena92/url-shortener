@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: url-shortener
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    initialization-mode: always
+    url: jdbc:postgresql://localhost:5432/url
+    password: 123456
+  jackson:
+    default-property-inclusion: non_null
+
+url:
+  shortener:
+    base: "http://localhost:8080/%s"
+    alphabet: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    length: 6
+  persistence:
+    purge:
+      cron: "0 0 * * * *"
+    retention:
+      hours: 8
+
+cache:
+  caffeine:
+    maximumSize: 1000
+    expireAfterWrite: 1
