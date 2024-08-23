@@ -21,7 +21,6 @@ Simple API REST application to shortens a valid URL
     ```bash
     java -jar libs/url-shortener-0.0.1-SNAPSHOT.jar
     ```
-
 ### Generate docker image
     ```bash
     docker build -t url-shortener .
