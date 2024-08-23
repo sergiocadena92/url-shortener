@@ -17,15 +17,15 @@ Simple API REST application to shortens a valid URL
     ```
 
 ## Usage
-### Running the Application
+- Running the Application
     ```bash
     java -jar libs/url-shortener-0.0.1-SNAPSHOT.jar
     ```
-### Generate docker image
+- Generate docker image
     ```bash
     docker build -t url-shortener .
     ```
-### Run docker container
+- Run docker container
     ```bash
     docker run -p 8080:8080 url-shortener
     ```
